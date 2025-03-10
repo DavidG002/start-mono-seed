@@ -1,0 +1,33 @@
+services:
+  django:
+    build: 
+      context: ../
+      dockerfile: apps/backend/django/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - django-static:/app/static
+      - django-db:/app/db
+  next:
+    build: 
+      context: ../
+      dockerfile: apps/frontend/next/Dockerfile
+    ports:
+      - "4200:4200"
+    env_file:
+      - .env
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - django-static:/app/static
+    depends_on:
+      - django
+      - next
+volumes:
+  django-static:
+  django-db:

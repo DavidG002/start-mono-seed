@@ -1,0 +1,4 @@
+21:47:11.32 [INFO] Completed: Building local_dists.pex
+21:47:24.99 [INFO] Completed: Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10
+21:48:25.88 [INFO] Extending leases
+21:48:25.89 [INFO] Done extending leases

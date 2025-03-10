@@ -1,0 +1,19 @@
+20:13:47.18 [31m[ERROR][0m Unknown flags --log-level on global scope
+
+
+Use --print-stacktrace for more error details and/or -ldebug for more logs. 
+See https://www.pantsbuild.org/2.24/docs/using-pants/troubleshooting-common-issues for common issues.
+Consider reaching out for help: https://www.pantsbuild.org/community/getting-help
+
+20:13:47.18 [INFO] request completed: `--no-local-cache --log-level=debug run apps/django-app:manage -- runserver`
+20:14:15.48 [INFO] Extending leases
+20:14:15.48 [INFO] Done extending leases
+20:15:35.49 [INFO] Extending leases
+20:15:35.49 [INFO] Done extending leases
+20:16:55.50 [INFO] Extending leases
+20:16:55.51 [INFO] Done extending leases
+20:16:58.58 [WARN] Executor was not shut down explicitly.
+20:16:58.59 [ERROR] panic at 'Cannot drop a runtime in a context where blocking is not allowed. This happens when a runtime is dropped from within an asynchronous context.', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-1.40.0/src/runtime/blocking/shutdown.rs:51
+20:16:58.59 [ERROR] Please set RUST_BACKTRACE=1, re-run, and then file a bug at https://github.com/pantsbuild/pants/issues.
+20:16:58.59 [ERROR] panic at 'A Tokio 1.x context was found, but it is being shutdown.', /github/home/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-1.40.0/src/runtime/time/entry.rs:568
+20:16:58.59 [ERROR] Please set RUST_BACKTRACE=1, re-run, and then file a bug at https://github.com/pantsbuild/pants/issues.

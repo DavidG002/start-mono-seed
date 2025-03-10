@@ -1,0 +1,102 @@
+00:56:02.17 [INFO] Completed: Building local_dists.pex
+00:56:08.65 [INFO] Completed: Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10
+00:57:19.27 [INFO] Extending leases
+00:57:19.28 [INFO] Done extending leases
+00:58:39.28 [INFO] Extending leases
+00:58:39.29 [INFO] Done extending leases
+00:59:59.29 [INFO] Extending leases
+00:59:59.30 [INFO] Done extending leases
+01:01:19.30 [INFO] Extending leases
+01:01:19.31 [INFO] Done extending leases
+01:02:39.32 [INFO] Extending leases
+01:02:39.32 [INFO] Done extending leases
+08:38:29.98 [INFO] Garbage collecting store. target_size=28,800,000,000
+08:38:29.99 [INFO] Done garbage collecting store
+08:38:29.99 [INFO] Extending leases
+08:38:30.02 [INFO] Done extending leases
+09:28:22.18 [INFO] Extending leases
+09:28:22.19 [INFO] Done extending leases
+09:42:52.05 [INFO] Garbage collecting store. target_size=28,800,000,000
+09:42:52.05 [INFO] Done garbage collecting store
+09:42:52.05 [INFO] Extending leases
+09:42:52.06 [INFO] Done extending leases
+09:44:12.07 [INFO] Extending leases
+09:44:12.08 [INFO] Done extending leases
+09:44:40.51 [INFO] notify invalidation: cleared 1 and dirtied 250 nodes for: {"apps/backend", "apps"}
+09:45:32.08 [INFO] Extending leases
+09:45:32.09 [INFO] Done extending leases
+09:46:52.10 [INFO] Extending leases
+09:46:52.11 [INFO] Done extending leases
+09:48:12.11 [INFO] Extending leases
+09:48:12.12 [INFO] Done extending leases
+09:49:32.13 [INFO] Extending leases
+09:49:32.14 [INFO] Done extending leases
+09:50:52.14 [INFO] Extending leases
+09:50:52.15 [INFO] Done extending leases
+09:52:12.15 [INFO] Extending leases
+09:52:12.16 [INFO] Done extending leases
+09:53:32.16 [INFO] Extending leases
+09:53:32.17 [INFO] Done extending leases
+09:54:52.18 [INFO] Extending leases
+09:54:52.20 [INFO] Done extending leases
+09:56:12.20 [INFO] Extending leases
+09:56:12.21 [INFO] Done extending leases
+09:57:32.22 [INFO] Extending leases
+09:57:32.23 [INFO] Done extending leases
+09:58:52.24 [INFO] Extending leases
+09:58:52.25 [INFO] Done extending leases
+10:00:12.26 [INFO] Extending leases
+10:00:12.27 [INFO] Done extending leases
+10:01:32.28 [INFO] Extending leases
+10:01:32.30 [INFO] Done extending leases
+10:02:52.30 [INFO] Extending leases
+10:02:52.31 [INFO] Done extending leases
+10:04:12.31 [INFO] Extending leases
+10:04:12.32 [INFO] Done extending leases
+10:05:32.33 [INFO] Extending leases
+10:05:32.35 [INFO] Done extending leases
+10:06:52.35 [INFO] Extending leases
+10:06:52.37 [INFO] Done extending leases
+10:08:12.37 [INFO] Extending leases
+10:08:12.39 [INFO] Done extending leases
+10:09:32.39 [INFO] Extending leases
+10:09:32.40 [INFO] Done extending leases
+10:10:52.41 [INFO] Extending leases
+10:10:52.42 [INFO] Done extending leases
+10:12:12.42 [INFO] Extending leases
+10:12:12.43 [INFO] Done extending leases
+10:13:32.45 [INFO] Extending leases
+10:13:32.46 [INFO] Done extending leases
+10:14:52.46 [INFO] Extending leases
+10:14:52.47 [INFO] Done extending leases
+10:16:12.47 [INFO] Extending leases
+10:16:12.49 [INFO] Done extending leases
+10:17:32.49 [INFO] Extending leases
+10:17:32.50 [INFO] Done extending leases
+10:18:52.50 [INFO] Extending leases
+10:18:52.51 [INFO] Done extending leases
+10:20:12.52 [INFO] Extending leases
+10:20:12.53 [INFO] Done extending leases
+10:21:32.54 [INFO] Extending leases
+10:21:32.56 [INFO] Done extending leases
+10:22:52.56 [INFO] Extending leases
+10:22:52.57 [INFO] Done extending leases
+10:24:12.58 [INFO] Extending leases
+10:24:12.60 [INFO] Done extending leases
+10:25:32.61 [INFO] Extending leases
+10:25:32.62 [INFO] Done extending leases
+10:26:52.63 [INFO] Extending leases
+10:26:52.64 [INFO] Done extending leases
+10:28:12.65 [INFO] Extending leases
+10:28:12.66 [INFO] Done extending leases
+10:29:32.67 [INFO] Extending leases
+10:29:32.68 [INFO] Done extending leases
+10:30:52.69 [INFO] Extending leases
+10:30:52.71 [INFO] Done extending leases
+10:32:12.72 [INFO] Extending leases
+10:32:12.72 [INFO] Done extending leases
+10:33:32.73 [INFO] Extending leases
+10:33:32.74 [INFO] Done extending leases
+10:33:39.75 [WARN] Failed to write stderr to Console { console: Console { stdin_handle: Some(File { fd: 162, path: "/dev/pts/9 (deleted)", read: true, write: false }), stdout_handle: Some(File { fd: 163, path: "/dev/pts/9 (deleted)", read: false, write: true }), stderr_handle: Some(File { fd: 164, path: "/dev/pts/9 (deleted)", read: true, write: true }), stderr_use_color: true } }, falling back to Logging: Err("Input/output error (os error 5)")
+10:33:39.75 [INFO] stderr: "Interrupted by user.\n"
+10:33:39.75 [INFO] stderr: "\n"

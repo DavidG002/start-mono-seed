@@ -1,0 +1,25 @@
+# Python/Django
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+*.egg
+venv/
+env/
+*.sqlite3
+db.sqlite3
+*.log
+migrations/__init__.py
+
+# Pants
+.pants.d
+pants-remote-cache
+
+# Misc
+.git
+.gitignore
+.env
+Dockerfile
+README.md

@@ -1,0 +1,8 @@
+20:10:39.17 [INFO] Completed: Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10
+20:10:39.17 [31m[ERROR][0m 1 Exception encountered:
+
+Engine traceback:
+  in `run` goal
+
+IntrinsicError: Could not identify a process to backtrack to for: Missing digest: Was not present in the local store: Digest { hash: Fingerprint<0100c2e0b9e5dd56b063c98176cdd11b6064c2439d0faefdd3d25453393ed9fb>, size_bytes: 4315782 }
+

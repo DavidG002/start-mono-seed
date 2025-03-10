@@ -1,0 +1,22 @@
+18:14:31.69 [INFO] notify invalidation: cleared 1 and dirtied 32 nodes for: {".tmpFhbu2I.hardlink_canary", ""}
+18:14:31.69 [INFO] notify invalidation: cleared 1 and dirtied 4 nodes for: {".tmpFhbu2I.hardlink_canary", ""}
+18:14:31.69 [INFO] notify invalidation: cleared 1 and dirtied 113 nodes for: {".tmpFhbu2I.hardlink_canary", ""}
+18:14:31.69 [INFO] notify invalidation: cleared 1 and dirtied 171 nodes for: {"", ".tmpFhbu2I.hardlink_canary"}
+18:14:31.69 [INFO] notify invalidation: cleared 0 and dirtied 0 nodes for: {".tmpFhbu2I.hardlink_canary", ""}
+18:14:31.69 [INFO] notify invalidation: cleared 0 and dirtied 0 nodes for: {"", ".tmpFhbu2I.hardlink_canary"}
+18:14:31.69 [INFO] notify invalidation: cleared 1 and dirtied 4 nodes for: {"", ".tmpFhbu2I.hardlink_canary"}
+18:14:31.69 [INFO] notify invalidation: cleared 0 and dirtied 0 nodes for: {"", ".tmpFhbu2I.hardlink_canary"}
+18:14:31.71 [INFO] Filesystem changed during run: retrying `Scandir()` in 500ms...
+18:14:31.71 [INFO] Filesystem changed during run: retrying `Scandir()` in 500ms...
+18:14:31.71 [31m[ERROR][0m 1 Exception encountered:
+
+Engine traceback:
+  in `export` goal
+
+UnrecognizedResolveNamesError: Unrecognized resolve name from the options --export-resolve and/or --export-bin: apps/django-app:manage
+
+All valid resolve names: ['coverage-py', 'ipython', 'pytest', 'python-default']
+
+All valid exportable binaries: ['pex-cli', 'scc']
+
+18:14:31.71 [INFO] Filesystem changed during run: retrying `Scandir()` in 500ms...

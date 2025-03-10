@@ -1,0 +1,7 @@
+17:21:53.55 [33m[WARN][0m Pants cannot infer owners for the following imports in the target apps/django-app/manage.py:django_app:
+
+  * django.core.management.execute_from_command_line (line: 11)
+
+If you do not expect an import to be inferrable, add `# pants: no-infer-dep` to the import line. Otherwise, see https://www.pantsbuild.org/2.24/docs/using-pants/troubleshooting-common-issues#import-errors-and-missing-dependencies for common problems.
+17:22:04.08 [INFO] Completed: Building local_dists.pex
+17:22:07.17 [INFO] Completed: Building apps.django-app/manage.pex

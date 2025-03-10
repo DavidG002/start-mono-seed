@@ -1,14 +1,23 @@
-# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
-# compiled output
+# Compiled Output
 dist
 tmp
 out-tsc
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+build/
+*.egg-info/
+*.egg
 
-# dependencies
+# Dependencies
 node_modules
+*.egg
+venv/
+env/
 
-# IDEs and editors
+# IDEs and Editors
 /.idea
 .project
 .classpath
@@ -16,31 +25,49 @@ node_modules
 *.launch
 .settings/
 *.sublime-workspace
-
-# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
+# Logs and Misc
+*.log
 npm-debug.log
 yarn-error.log
 testem.log
+/coverage
+/.sass-cache
+/connect.lock
+/libpeerconnection.log
 /typings
 
 # System Files
 .DS_Store
 Thumbs.db
 
+# Nx
 .nx/cache
 .nx/workspace-data
 
 # Next.js
 .next
 out
+
+# Django/Python
+*.sqlite3
+db.sqlite3
+migrations/__init__.py
+*.bak
+
+# Pants
+.pants.d/
+pants-remote-cache/
+pants-remote-cache-*/
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

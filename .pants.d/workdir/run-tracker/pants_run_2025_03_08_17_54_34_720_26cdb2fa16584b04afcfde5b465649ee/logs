@@ -1,0 +1,2 @@
+17:54:37.68 [INFO] Completed: Building local_dists.pex
+17:54:46.15 [INFO] Completed: Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10

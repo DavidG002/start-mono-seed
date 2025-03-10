@@ -1,0 +1,17 @@
+[GLOBAL]
+pants_version = "2.24.0"
+backend_packages = [
+  "pants.backend.python",
+  "pants.backend.docker"
+]
+
+[source]
+root_patterns = [
+  "apps/backend/django",
+  "apps/frontend/next",
+  "apps/frontend/next-e2e",
+  "libs/*"
+]
+
+[python]
+interpreter_constraints = [">=3.10"]

@@ -1,0 +1,38 @@
+{
+  "name": "django",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/backend/django",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./pants run apps/backend/django:manage -- runserver --noreload"
+      }
+    },
+    "migrate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./pants run apps/backend/django:manage -- migrate"
+      }
+    },
+    "docker-build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker build -t start-mono-django -f apps/backend/django/Dockerfile apps/backend/django"
+      }
+    },
+    "docker-run": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker run -d -p 8000:8000 --name start-mono-django-container start-mono-django"
+      }
+    },
+    "docker-down": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker stop start-mono-django-container || true && docker rm start-mono-django-container || true && docker rmi start-mono-django || true"
+      }
+    }
+  }
+}

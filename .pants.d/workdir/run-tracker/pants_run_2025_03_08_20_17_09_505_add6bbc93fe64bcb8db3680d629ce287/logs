@@ -1,0 +1,122 @@
+20:17:09.54 [32m[DEBUG][0m specs are: Specs(includes=RawSpecs(description_of_origin='CLI arguments', address_literals=(AddressLiteralSpec(path_component='apps/django-app', target_component='manage', generated_component=None, parameters=FrozenDict({})),), file_literals=(), file_globs=(), dir_literals=(), dir_globs=(), recursive_globs=(), ancestor_globs=(), unmatched_glob_behavior=<GlobMatchErrorBehavior.error: 'error'>, filter_by_global_options=True, from_change_detection=False), ignores=RawSpecs(description_of_origin='CLI arguments', address_literals=(), file_literals=(), file_globs=(), dir_literals=(), dir_globs=(), recursive_globs=(), ancestor_globs=(), unmatched_glob_behavior=<GlobMatchErrorBehavior.error: 'error'>, filter_by_global_options=False, from_change_detection=False))
+20:17:09.54 [32m[DEBUG][0m changed_options are: ChangedOptions(since=None, diffspec=None, dependents=<DependentsOption.NONE: 'none'>)
+20:17:09.54 [32m[DEBUG][0m Launching 1 roots (poll=false).
+20:17:09.55 [32m[DEBUG][0m Found BuildRoot("/mnt/c/Users/David/Apps-Start/Start-App/start-mono-seed") starting search from /mnt/c/Users/David/Apps-Start/Start-App/start-mono-seed.
+20:17:09.56 [32m[DEBUG][0m computed 1 nodes in 0.023601 seconds. there are 17 total nodes.
+20:17:09.56 [32m[DEBUG][0m Launching 1 roots (poll=false).
+20:17:09.56 [32m[DEBUG][0m computed 1 nodes in 0.001062 seconds. there are 22 total nodes.
+20:17:09.56 [32m[DEBUG][0m Launching 1 roots (poll=false).
+20:17:09.56 [32m[DEBUG][0m computed 1 nodes in 0.000417 seconds. there are 22 total nodes.
+20:17:09.56 [32m[DEBUG][0m requesting <class 'pants.core.goals.run.Run'> to satisfy execution of `run` goal
+20:17:09.56 [32m[DEBUG][0m Launching 1 roots (poll=false).
+20:17:09.59 [32m[DEBUG][0m Completed: Find targets from input specs
+20:17:09.60 [32m[DEBUG][0m Completed: pants.backend.python.goals.package_pex_binary.package_pex_binary
+20:17:09.61 [32m[DEBUG][0m Completed: Generate `python_requirement` targets from requirements.txt or PEP 621 compliant pyproject.toml
+20:17:09.64 [32m[DEBUG][0m Completed: Determine Python dependencies for "django_app/urls.py"
+20:17:09.64 [32m[DEBUG][0m Completed: Determine Python dependencies for "manage.py"
+20:17:09.64 [32m[DEBUG][0m Completed: Determine Python dependencies for "django_app/wsgi.py"
+20:17:09.64 [32m[DEBUG][0m Completed: pants.backend.python.dependency_inference.parse_python_dependencies.parse_python_dependencies
+20:17:09.64 [32m[DEBUG][0m Completed: Determine Python dependencies for "django_app/settings.py"
+20:17:09.64 [32m[DEBUG][0m Completed: pants.backend.python.dependency_inference.parse_python_dependencies.parse_python_dependencies
+20:17:09.64 [32m[DEBUG][0m Completed: pants.backend.python.dependency_inference.parse_python_dependencies.parse_python_dependencies
+20:17:09.64 [32m[DEBUG][0m Completed: pants.backend.python.dependency_inference.parse_python_dependencies.parse_python_dependencies
+20:17:09.65 [32m[DEBUG][0m Completed: Determine Python dependencies for "django_app/asgi.py"
+20:17:09.65 [32m[DEBUG][0m Completed: pants.backend.python.dependency_inference.parse_python_dependencies.parse_python_dependencies
+20:17:09.66 [32m[DEBUG][0m Completed: Determine Python dependencies for "django_app/__init__.py"
+20:17:09.66 [32m[DEBUG][0m Completed: pants.backend.python.dependency_inference.parse_python_dependencies.parse_python_dependencies
+20:17:09.67 [32m[DEBUG][0m Completed: Find all targets in the project
+20:17:09.68 [32m[DEBUG][0m Completed: Find all Python targets in project
+20:17:09.68 [32m[DEBUG][0m Completed: Creating map of third party targets to Python modules
+20:17:09.68 [32m[DEBUG][0m Completed: Creating map of first party Python targets to Python modules
+20:17:09.68 [32m[DEBUG][0m Completed: pants.backend.python.dependency_inference.module_mapper.merge_first_party_module_mappings
+20:17:09.68 [32m[DEBUG][0m Completed: Resolve transitive targets
+20:17:09.69 [32m[DEBUG][0m Completed: Resolve transitive targets
+20:17:09.70 [32m[DEBUG][0m Completed: pants.backend.python.util_rules.python_sources.prepare_python_sources
+20:17:09.70 [32m[DEBUG][0m Completed: pants.core.util_rules.search_paths.validate_search_paths
+20:17:09.70 [32m[DEBUG][0m Downloading https://github.com/pex-tool/pex/releases/download/v2.20.3/pex (attempt #1)
+20:17:09.70 [32m[DEBUG][0m Completed: Prepare environment for running PEXes
+20:17:10.01 [DEBUG] Launching 1 roots (poll=true).
+20:17:10.51 [DEBUG] Launching 1 roots (poll=true).
+20:17:11.01 [DEBUG] Launching 1 roots (poll=true).
+20:17:11.51 [DEBUG] Launching 1 roots (poll=true).
+20:17:11.72 [32m[DEBUG][0m Completed: Downloading: https://github.com/pex-tool/pex/releases/download/v2.20.3/pex (4.12 MB)
+20:17:11.74 [32m[DEBUG][0m Completed: Extracting an archive file
+20:17:11.74 [32m[DEBUG][0m Completed: pants.core.util_rules.external_tool.download_external_tool
+20:17:11.74 [32m[DEBUG][0m Completed: acquire_command_runner_slot
+20:17:11.74 [32m[DEBUG][0m Running Find interpreter for constraints: CPython>=3.10 under semaphore with concurrency id: 1, and concurrency: 1
+20:17:11.75 [32m[DEBUG][0m /home/david/.cache/pants/lmdb_store/immutable/files -> /tmp hardlinkable: true
+20:17:11.75 [32m[DEBUG][0m Completed: setup_sandbox
+20:17:11.76 [32m[DEBUG][0m spawned local process as Some(3439) for Process { argv: ["/home/david/.cache/nce/6d61748cea187199dc28418157b2121ccbbb44e4af2ee6fddf8c04bbed73f76d/bindings/venvs/2.24.0/bin/python3.9", "./pex", "--tmpdir", ".tmp", "--no-emit-warnings", "--pip-version", "24.2", "--python-path", "/home/david/.local/bin:/home/david/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/David/AppData/Local/pnpm:/mnt/c/Users/David/scoop/shims:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/David/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/David/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Git/bin:/mnt/c/Users/David/AppData/Roaming/npm:/mnt/c/Users/David/.vscode/extensions/ms-python.debugpy-2025.4.0-win32-x64/bundled/scripts/noConfigScripts:/mnt/c/Users/David/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/bin", "--interpreter-constraint", "CPython>=3.10", "--", "-c", "import hashlib, os, sys\n\npython = os.path.realpath(sys.executable)\nprint(python)\n\nhasher = hashlib.sha256()\nwith open(python, \"rb\") as fp:\n  for chunk in iter(lambda: fp.read(8192), b\"\"):\n      hasher.update(chunk)\nprint(hasher.hexdigest())\n"], env: {"CPPFLAGS": "", "LANG": "C.UTF-8", "LDFLAGS": "", "PATH": "/home/david/.local/bin:/home/david/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/David/AppData/Local/pnpm:/mnt/c/Users/David/scoop/shims:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/David/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/David/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Git/bin:/mnt/c/Users/David/AppData/Roaming/npm:/mnt/c/Users/David/.vscode/extensions/ms-python.debugpy-2025.4.0-win32-x64/bundled/scripts/noConfigScripts:/mnt/c/Users/David/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/bin", "PEX_IGNORE_RCFILES": "true", "PEX_PYTHON": "/home/david/.cache/nce/6d61748cea187199dc28418157b2121ccbbb44e4af2ee6fddf8c04bbed73f76d/bindings/venvs/2.24.0/bin/python3.9", "PEX_ROOT": ".cache/pex_root"}, working_directory: None, input_digests: InputDigests { complete: DirectoryDigest { digest: Digest { hash: Fingerprint<297f06f4274c04a74cdfaa866d09935883689e7fb930062aa8508b4f33d81c20>, size_bytes: 158 }, tree: "Some(..)" }, nailgun: DirectoryDigest { digest: Digest { hash: Fingerprint<e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855>, size_bytes: 0 }, tree: "Some(..)" }, inputs: DirectoryDigest { digest: Digest { hash: Fingerprint<297f06f4274c04a74cdfaa866d09935883689e7fb930062aa8508b4f33d81c20>, size_bytes: 158 }, tree: "Some(..)" }, immutable_inputs: {}, use_nailgun: {} }, output_files: {}, output_directories: {}, timeout: None, execution_slot_variable: None, concurrency_available: 0, description: "Find interpreter for constraints: CPython>=3.10", level: Debug, append_only_caches: {CacheName("pex_root"): RelativePath(".cache/pex_root"), CacheName("python_build_standalone"): RelativePath(".python-build-standalone")}, jdk_home: None, cache_scope: PerRestartSuccessful, execution_environment: ProcessExecutionEnvironment { name: None, platform: Linux_x86_64, strategy: Local }, remote_cache_speculation_delay: 0ns, attempt: 0 }
+20:17:12.01 [DEBUG] Launching 1 roots (poll=true).
+20:17:12.52 [DEBUG] Launching 1 roots (poll=true).
+20:17:13.02 [DEBUG] Launching 1 roots (poll=true).
+20:17:13.52 [DEBUG] Launching 1 roots (poll=true).
+20:17:14.02 [DEBUG] Launching 1 roots (poll=true).
+20:17:14.53 [DEBUG] Launching 1 roots (poll=true).
+20:17:14.63 [32m[DEBUG][0m Completed: Find interpreter for constraints: CPython>=3.10
+20:17:14.63 [32m[DEBUG][0m Completed: Scheduling: Find interpreter for constraints: CPython>=3.10
+20:17:14.63 [32m[DEBUG][0m Completed: Find Python interpreter for constraints - CPython>=3.10 - Selected /usr/bin/python3.12 to run PEXes with.
+20:17:14.63 [32m[DEBUG][0m Completed: acquire_command_runner_slot
+20:17:14.63 [32m[DEBUG][0m Running Building local_dists.pex under semaphore with concurrency id: 2, and concurrency: 1
+20:17:14.64 [32m[DEBUG][0m Completed: setup_sandbox
+20:17:14.64 [32m[DEBUG][0m spawned local process as Some(3449) for Process { argv: ["/home/david/.cache/nce/6d61748cea187199dc28418157b2121ccbbb44e4af2ee6fddf8c04bbed73f76d/bindings/venvs/2.24.0/bin/python3.9", "./pex", "--tmpdir", ".tmp", "--no-emit-warnings", "--pip-version", "24.2", "--python-path", "/home/david/.local/bin:/home/david/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/David/AppData/Local/pnpm:/mnt/c/Users/David/scoop/shims:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/David/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/David/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Git/bin:/mnt/c/Users/David/AppData/Roaming/npm:/mnt/c/Users/David/.vscode/extensions/ms-python.debugpy-2025.4.0-win32-x64/bundled/scripts/noConfigScripts:/mnt/c/Users/David/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/bin", "--output-file", "local_dists.pex", "--intransitive", "--python", "/usr/bin/python3.12", "--no-pre-install-wheels", "--sources-directory=source_files", "--no-pypi", "--index=https://pypi.org/simple/", "--manylinux", "manylinux2014", "--resolver-version", "pip-2020-resolver", "--layout", "packed"], env: {"CPPFLAGS": "", "LANG": "C.UTF-8", "LDFLAGS": "", "PATH": "/home/david/.local/bin:/home/david/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/David/AppData/Local/pnpm:/mnt/c/Users/David/scoop/shims:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/David/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/David/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Git/bin:/mnt/c/Users/David/AppData/Roaming/npm:/mnt/c/Users/David/.vscode/extensions/ms-python.debugpy-2025.4.0-win32-x64/bundled/scripts/noConfigScripts:/mnt/c/Users/David/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/bin", "PEX_IGNORE_RCFILES": "true", "PEX_PYTHON": "/home/david/.cache/nce/6d61748cea187199dc28418157b2121ccbbb44e4af2ee6fddf8c04bbed73f76d/bindings/venvs/2.24.0/bin/python3.9", "PEX_ROOT": ".cache/pex_root"}, working_directory: None, input_digests: InputDigests { complete: DirectoryDigest { digest: Digest { hash: Fingerprint<26eb1744ce94b720287ae07b5f2268104f7bec5ae46ca6ac5fea8b96ebba9770>, size_bytes: 242 }, tree: "Some(..)" }, nailgun: DirectoryDigest { digest: Digest { hash: Fingerprint<e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855>, size_bytes: 0 }, tree: "Some(..)" }, inputs: DirectoryDigest { digest: Digest { hash: Fingerprint<26eb1744ce94b720287ae07b5f2268104f7bec5ae46ca6ac5fea8b96ebba9770>, size_bytes: 242 }, tree: "Some(..)" }, immutable_inputs: {}, use_nailgun: {} }, output_files: {}, output_directories: {RelativePath("local_dists.pex")}, timeout: None, execution_slot_variable: None, concurrency_available: 0, description: "Building local_dists.pex", level: Info, append_only_caches: {CacheName("pex_root"): RelativePath(".cache/pex_root"), CacheName("python_build_standalone"): RelativePath(".python-build-standalone")}, jdk_home: None, cache_scope: Successful, execution_environment: ProcessExecutionEnvironment { name: None, platform: Linux_x86_64, strategy: Local }, remote_cache_speculation_delay: 0ns, attempt: 0 }
+20:17:15.03 [DEBUG] Launching 1 roots (poll=true).
+20:17:15.54 [DEBUG] Launching 1 roots (poll=true).
+20:17:15.71 [INFO] Completed: Building local_dists.pex
+20:17:15.71 [32m[DEBUG][0m Completed: Scheduling: Building local_dists.pex
+20:17:15.72 [32m[DEBUG][0m Completed: pants.backend.python.util_rules.pex.build_pex
+20:17:15.72 [32m[DEBUG][0m Completed: pants.backend.python.util_rules.python_sources.strip_python_sources
+20:17:15.72 [32m[DEBUG][0m Completed: pants.backend.python.util_rules.pex_from_targets.create_pex_from_targets
+20:17:15.72 [32m[DEBUG][0m Completed: acquire_command_runner_slot
+20:17:15.72 [32m[DEBUG][0m Running Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10 under semaphore with concurrency id: 3, and concurrency: 2
+20:17:15.72 [32m[DEBUG][0m Completed: setup_sandbox
+20:17:15.73 [32m[DEBUG][0m spawned local process as Some(3452) for Process { argv: ["/home/david/.cache/nce/6d61748cea187199dc28418157b2121ccbbb44e4af2ee6fddf8c04bbed73f76d/bindings/venvs/2.24.0/bin/python3.9", "./pex", "--tmpdir", ".tmp", "--jobs", "2", "--no-emit-warnings", "--pip-version", "24.2", "--python-path", "/home/david/.local/bin:/home/david/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/David/AppData/Local/pnpm:/mnt/c/Users/David/scoop/shims:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/David/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/David/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Git/bin:/mnt/c/Users/David/AppData/Roaming/npm:/mnt/c/Users/David/.vscode/extensions/ms-python.debugpy-2025.4.0-win32-x64/bundled/scripts/noConfigScripts:/mnt/c/Users/David/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/bin", "--output-file", "apps.django-app/manage.pex", "--emit-warnings", "--check=warn", "--requirements-pex", "local_dists.pex", "--interpreter-constraint", "CPython>=3.10", "--console-script", "manage.py", "--sources-directory=source_files", "django<6.0.0,>=5.1.7", "psycopg2-binary<3.0.0,>=2.9.10", "--no-pypi", "--index=https://pypi.org/simple/", "--manylinux", "manylinux2014", "--resolver-version", "pip-2020-resolver", "--layout", "zipapp"], env: {"CPPFLAGS": "", "LANG": "C.UTF-8", "LDFLAGS": "", "PATH": "/home/david/.local/bin:/home/david/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/David/AppData/Local/pnpm:/mnt/c/Users/David/scoop/shims:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/David/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/David/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/David/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Git/bin:/mnt/c/Users/David/AppData/Roaming/npm:/mnt/c/Users/David/.vscode/extensions/ms-python.debugpy-2025.4.0-win32-x64/bundled/scripts/noConfigScripts:/mnt/c/Users/David/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/bin", "PEX_IGNORE_RCFILES": "true", "PEX_PYTHON": "/home/david/.cache/nce/6d61748cea187199dc28418157b2121ccbbb44e4af2ee6fddf8c04bbed73f76d/bindings/venvs/2.24.0/bin/python3.9", "PEX_ROOT": ".cache/pex_root"}, working_directory: None, input_digests: InputDigests { complete: DirectoryDigest { digest: Digest { hash: Fingerprint<a2832ce7ea982d0a35abcb1d6370c332057b78f3cafff7df62aff56bc374522c>, size_bytes: 335 }, tree: "Some(..)" }, nailgun: DirectoryDigest { digest: Digest { hash: Fingerprint<e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855>, size_bytes: 0 }, tree: "Some(..)" }, inputs: DirectoryDigest { digest: Digest { hash: Fingerprint<a2832ce7ea982d0a35abcb1d6370c332057b78f3cafff7df62aff56bc374522c>, size_bytes: 335 }, tree: "Some(..)" }, immutable_inputs: {}, use_nailgun: {} }, output_files: {RelativePath("apps.django-app/manage.pex")}, output_directories: {}, timeout: None, execution_slot_variable: None, concurrency_available: 2, description: "Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10", level: Info, append_only_caches: {CacheName("pex_root"): RelativePath(".cache/pex_root"), CacheName("python_build_standalone"): RelativePath(".python-build-standalone")}, jdk_home: None, cache_scope: Successful, execution_environment: ProcessExecutionEnvironment { name: None, platform: Linux_x86_64, strategy: Local }, remote_cache_speculation_delay: 0ns, attempt: 0 }
+20:17:16.04 [DEBUG] Launching 1 roots (poll=true).
+20:17:16.55 [DEBUG] Launching 1 roots (poll=true).
+20:17:17.05 [DEBUG] Launching 1 roots (poll=true).
+20:17:17.56 [DEBUG] Launching 1 roots (poll=true).
+20:17:18.06 [DEBUG] Launching 1 roots (poll=true).
+20:17:18.57 [DEBUG] Launching 1 roots (poll=true).
+20:17:19.07 [DEBUG] Launching 1 roots (poll=true).
+20:17:19.58 [DEBUG] Launching 1 roots (poll=true).
+20:17:20.08 [DEBUG] Launching 1 roots (poll=true).
+20:17:20.59 [DEBUG] Launching 1 roots (poll=true).
+20:17:21.10 [DEBUG] Launching 1 roots (poll=true).
+20:17:21.60 [DEBUG] Launching 1 roots (poll=true).
+20:17:22.11 [DEBUG] Launching 1 roots (poll=true).
+20:17:22.61 [DEBUG] Launching 1 roots (poll=true).
+20:17:23.12 [DEBUG] Launching 1 roots (poll=true).
+20:17:23.63 [DEBUG] Launching 1 roots (poll=true).
+20:17:24.13 [DEBUG] Launching 1 roots (poll=true).
+20:17:24.64 [DEBUG] Launching 1 roots (poll=true).
+20:17:25.13 [DEBUG] Launching 1 roots (poll=true).
+20:17:25.64 [DEBUG] Launching 1 roots (poll=true).
+20:17:26.14 [DEBUG] Launching 1 roots (poll=true).
+20:17:26.65 [DEBUG] Launching 1 roots (poll=true).
+20:17:27.15 [DEBUG] Launching 1 roots (poll=true).
+20:17:27.66 [DEBUG] Launching 1 roots (poll=true).
+20:17:28.16 [DEBUG] Launching 1 roots (poll=true).
+20:17:28.67 [DEBUG] Launching 1 roots (poll=true).
+20:17:29.17 [DEBUG] Launching 1 roots (poll=true).
+20:17:29.68 [DEBUG] Launching 1 roots (poll=true).
+20:17:29.92 [INFO] Completed: Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10
+20:17:29.92 [32m[DEBUG][0m Completed: Scheduling: Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10
+20:17:29.92 [32m[DEBUG][0m Completed: pants.backend.python.util_rules.pex.build_pex
+20:17:29.92 [32m[DEBUG][0m Completed: pants.backend.python.goals.run_pex_binary.create_pex_binary_run_request
+20:17:29.92 [32m[DEBUG][0m Completed: `run` goal
+20:17:29.92 [32m[DEBUG][0m computed 1 nodes in 20.359613 seconds. there are 566 total nodes.
+20:17:29.92 [31m[ERROR][0m 1 Exception encountered:
+
+Engine traceback:
+  in `run` goal
+
+ProcessExecutionFailure: Process 'Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10' failed with exit code 1.
+stdout:
+
+stderr:
+Could not find script 'manage.py' in any distribution psycopg2-binary 2.9.10, sqlparse 0.5.3, asgiref 3.8.1, Django 5.1.7 within PEX!
+
+
+
+Use `--keep-sandboxes=on_failure` to preserve the process chroot for inspection.
+

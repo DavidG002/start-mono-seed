@@ -1,0 +1,32 @@
+{
+    "name": "infra",
+    "$schema": "../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "infra",
+    "projectType": "application",
+    "targets": {
+      "docker-compose-build": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "docker-compose -f infra/docker-compose.yml build"
+        }
+      },
+      "docker-compose-up": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "docker-compose -f infra/docker-compose.yml up -d"
+        }
+      },
+      "docker-compose-up-build": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "docker-compose -f infra/docker-compose.yml up -d --build"
+        }
+      },
+      "docker-compose-down": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "docker-compose -f infra/docker-compose.yml down"
+        }
+      }
+    }
+  }

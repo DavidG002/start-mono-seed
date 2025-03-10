@@ -1,0 +1,17 @@
+17:26:33.58 [INFO] Completed: Building local_dists.pex
+17:26:36.69 [INFO] Completed: Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10
+17:26:36.70 [31m[ERROR][0m 1 Exception encountered:
+
+Engine traceback:
+  in `run` goal
+
+ProcessExecutionFailure: Process 'Building apps.django-app/manage.pex with 2 requirements: django<6.0.0,>=5.1.7, psycopg2-binary<3.0.0,>=2.9.10' failed with exit code 1.
+stdout:
+
+stderr:
+Failed to spawn a job for /usr/bin/python3.12: received exit code 1 during execution of `['/usr/bin/python3.12', '-s', '-E', '-m', 'venv', '/tmp/pants-sandbox-ghSpRb/.tmp/tmpwxynxxev/pip']` while trying to execute `['/usr/bin/python3.12', '-s', '-E', '-m', 'venv', '/tmp/pants-sandbox-ghSpRb/.tmp/tmpwxynxxev/pip']`
+
+
+
+Use `--keep-sandboxes=on_failure` to preserve the process chroot for inspection.
+

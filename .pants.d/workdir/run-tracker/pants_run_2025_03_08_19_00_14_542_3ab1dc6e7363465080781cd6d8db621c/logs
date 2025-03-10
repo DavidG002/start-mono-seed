@@ -1,0 +1,10 @@
+19:00:14.62 [31m[ERROR][0m 1 Exception encountered:
+
+Engine traceback:
+  in `run` goal
+
+MappingError: Failed to parse ./apps/django-app/BUILD:
+ParseError: Import used in apps/django-app/BUILD at line 3. Import statements are banned in BUILD files and macros (that act like a normal BUILD file) because they can easily break Pants caching and lead to stale results. 
+
+Instead, consider writing a plugin (https://www.pantsbuild.org/2.24/docs/writing-plugins/overview).
+

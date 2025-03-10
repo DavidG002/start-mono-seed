@@ -1,0 +1,16 @@
+20:18:11.34 [31m[ERROR][0m Unknown flags --no-synthesize-virtualenv on scope export-dist
+
+
+Use --print-stacktrace for more error details and/or -ldebug for more logs. 
+See https://www.pantsbuild.org/2.24/docs/using-pants/troubleshooting-common-issues for common issues.
+Consider reaching out for help: https://www.pantsbuild.org/community/getting-help
+
+20:18:11.34 [INFO] request completed: `export-dist --no-synthesize-virtualenv apps/django-app:manage`
+20:19:30.66 [INFO] Extending leases
+20:19:30.66 [INFO] Done extending leases
+20:20:50.67 [INFO] Extending leases
+20:20:50.67 [INFO] Done extending leases
+20:21:50.64 [INFO] handling request: `--no-local-cache run apps/django-app:manage -- runserver`
+20:21:50.75 [INFO] Initialization options changed: reinitializing scheduler...
+20:21:51.29 [INFO] Initializing Nailgun pool for 32 processes...
+20:21:53.24 [INFO] Scheduler initialized.

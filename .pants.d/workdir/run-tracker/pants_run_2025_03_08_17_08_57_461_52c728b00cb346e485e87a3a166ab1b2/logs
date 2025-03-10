@@ -1,0 +1,7 @@
+17:08:57.80 [31m[ERROR][0m 1 Exception encountered:
+
+Engine traceback:
+  in `run` goal
+
+InvalidFieldException: apps/django-app/BUILD:3: Failed to get dependencies for apps/django-app:manage: The file or directory 'django_app' does not exist on disk in the workspace, so the address 'django_app' from the `dependencies` field from the target apps/django-app:manage cannot be resolved.
+

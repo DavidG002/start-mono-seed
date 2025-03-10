@@ -1,0 +1,18 @@
+# Node.js/Next.js
+node_modules
+.next
+out
+*.log
+npm-debug.log
+yarn-error.log
+
+# Pants
+.pants.d
+pants-remote-cache
+
+# Misc
+.git
+.gitignore
+.env
+Dockerfile
+README.md
