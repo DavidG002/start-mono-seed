@@ -73,5 +73,5 @@ pants-remote-cache-*/
 .env.production.local
 
 #certs files 
-infra/certs/fullchain.pem
-infra/certs/privkey.pem
+*.pem
+*.pem
