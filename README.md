@@ -1,82 +1,58 @@
-# 
+# Start Mono Seed
+A barebones Nx monorepo with Next.js, Django, Pants, and Docker Compose—ready for local dev on HTTP/HTTPS.
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+## Features
+- **Frontend**: Next.js (`https://localhost/`).
+- **Backend**: Django with admin (`https://localhost/admin/`).
+- **Build**: Nx and Pants—monorepo tooling.
+- **Deploy**: Docker Compose—HTTP (`80`) and HTTPS (`443`) with self-signed certs.
+- **Superuser**: Auto-created (`admin`/`password`)—customizable.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+## Prerequisites
+- Node.js (18+)
+- Python (3.10+)
+- pnpm
+- Docker + Docker Compose
+- **Note**: On Windows, use WSL (Windows Subsystem for Linux) for consistency with Pants and Nx. Linux and macOS work natively.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/next?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+## Setup
+1. Clone: `git clone https://github.com/DavidG002/start-mono-seed.git`  
+   Then: `cd start-mono-seed`  
+2. Install: `pnpm install`  
+3. Certs (Optional): Copy self-signed certs to `infra/certs/` (e.g., `fullchain.pem`, `privkey.pem`).  
+   Or generate: `cd infra && openssl req -x509 -newkey rsa:4096 -keyout certs/privkey.pem -out certs/fullchain.pem -days 365 -nodes -subj "/CN=localhost"`  
+4. Build and Run: `pnpm nx docker-compose-up-build infra`  
+5. Access: Frontend at `http://localhost/` or `https://localhost/` (accept cert warning), Admin at `https://localhost/admin/` (default: `admin`/`password`)
 
-## Finish your CI setup
+## Customize
+- **Superuser**: Edit `apps/backend/django/create_superuser.py`—e.g., `'myadmin', 'myemail@example.com', 'mypassword'`.
+- **Certs**: Replace `infra/certs/` with production certs (e.g., Let’s Encrypt).
+- **Deploy**: Extend with CI/CD—see GitHub Actions for ideas.
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/QfP8gFyrr2)
+## Notes
+- Uses SQLite—persisted via volumes (`django-db`).
+- HTTPS—self-signed for dev—swap for real certs in prod.
 
+## Commands
+- **Pants**:  
+  - `pants tailor`—Setup initial Pants config (optional, used early).  
+  - `pants package`—Build packages (superseded by Docker).  
+- **Nx (Local)**:  
+  - `pnpm nx serve next`—Run Next.js locally (non-Docker).  
+  - `pnpm nx serve django`—Run Django locally (non-Docker).  
+- **Nx Docker**:  
+  - `pnpm nx docker-build next`—Build Next.js Docker image.  
+  - `pnpm nx docker-build django`—Build Django Docker image.  
+  - `pnpm nx docker-down next`—Stop Next.js container.  
+  - `pnpm nx docker-down django`—Stop Django container.  
+  - `pnpm nx docker-compose-up-build infra`—Build and start Compose stack.  
+  - `pnpm nx docker-compose-down infra`—Stop Compose stack.
 
-## Run tasks
+## Customize
+- **Superuser**: Edit `apps/backend/django/create_superuser.py`—e.g., `'myadmin', 'myemail@example.com', 'mypassword'`.
+- **Certs**: Replace `infra/certs/` with production certs (e.g., Let’s Encrypt).
+- **Deploy**: Extend with CI/CD—see GitHub Actions for ideas.
 
-To run the dev server for your app, use:
-
-```sh
-npx nx dev frontend
-```
-
-To create a production bundle:
-
-```sh
-npx nx build frontend
-```
-
-To see all available targets to run for a project, run:
-
-```sh
-npx nx show project frontend
-```
-
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
-
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/next:app demo
-```
-
-To generate a new library, use:
-
-```sh
-npx nx g @nx/react:lib mylib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/next?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## Notes
+- Uses SQLite—persisted via volumes (`django-db`).
+- HTTPS—self-signed for dev—swap for real certs in prod.
