@@ -71,7 +71,3 @@ pants-remote-cache-*/
 .env.development.local
 .env.test.local
 .env.production.local
-
-#certs files 
-*.pem
-*.pem
